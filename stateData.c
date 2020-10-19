@@ -1,4 +1,4 @@
-/** 
+/**
  * This program processes a CSV file containing data on US
  * States and produces an XML-formatted file with the same data.
  */
@@ -79,7 +79,20 @@ int main(int argc, char **argv) {
 }
 
 void toXMLFile(char **states, int *populations, int numStates) {
-  // TODO: you need to implement this
+  // open file for writing and reading
+  FILE* write = fopen ("stateData.xml", "w");
+  FILE* read = fopen ("stateData.txt", "r");
+
+  // tokenize lines and write them
+  char s[100];
+  char *line = fgets(s, 100, read);
+  while (line != NULL)
+  {
+  char *state = strtok(line, ",");
+  char *pop = strtok(NULL, ",");
+  printf("state: %s", state);
+  printf("Population: %s", pop);
+  }
 }
 
 void rtrim(char *str) {
