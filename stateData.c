@@ -84,15 +84,7 @@ void toXMLFile(char **states, int *populations, int numStates) {
   FILE* read = fopen ("stateData.txt", "r");
 
   // tokenize lines and write them
-  char s[100];
-  char *line = fgets(s, 100, read);
-  while (line != NULL)
-  {
-  char *state = strtok(line, ",");
-  char *pop = strtok(NULL, ",");
-  printf("state: %s", state);
-  printf("Population: %s", pop);
-  }
+  
 }
 
 void rtrim(char *str) {
