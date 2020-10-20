@@ -91,10 +91,8 @@ void toXMLFile(char **states, int *populations, int numStates) {
   }
 
  //Write to XML file
-  char str [100];
-  int n = 1000
-  char *s = fgets (str, n, read);
-  fprintf (write, s);
+
+  fprintf (write, "%s", populations[1]);
 
 }
 
