@@ -90,6 +90,9 @@ void toXMLFile(char **states, int *populations, int numStates) {
   fprintf(write, "<STATES>\n");
   for (int i = 0; i < numStates; i++)
   {
+   //Chomp whitespace from state string
+    rtrim (states[i]);
+   //Print state and info
     fprintf (write, "   <STATE>\n");
     fprintf (write, "     <NAME>%s</NAME>\n", states[i]);
     fprintf (write, "     <POPULATION>%d</POPULATION>\n", populations[i]);
