@@ -27,10 +27,11 @@ c) Name one application where a binary file would be better
 
 2. How large was the XML file you produced (how many bytes)?
 
-
+    4441 bytes
 
 3. What is one advantage and one disadvantage of the XML data format?
-  XML is operable across several languages, however it is larger than binary
+
+    XML is operable across several languages, however it is larger than binary
 
 4. What was the win percentage of the Chicago Cubs in 2011?
 

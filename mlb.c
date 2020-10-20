@@ -36,6 +36,16 @@ int main(int argc, char **argv) {
   // TODO: open the file, read it line by line, tokenize it to get the
   //      team name, wins, and losses, and store the results into
   //      teams[] and winPercentagesp[]
+  FILE* read = fopen (filePath, "r");
+  for (i = 0; i < numTeams * 3; i++)
+  {
+    char *team = strtok(line, " ");
+    char *win = strtok(NULL, " ");
+    char *loss = strtok(NULL, "\n");
+    printf("%s\n", team);
+    printf("%s\n", win);
+    printf("%s\n", loss);
+  }
 
   // sort them
   sortMLB(teams, winPercentages, numTeams);
