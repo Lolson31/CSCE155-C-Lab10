@@ -29,7 +29,7 @@ int main(int argc, char **argv) {
   int i;
   char **teams = (char **)malloc(sizeof(char *) * numTeams);
   double *winPercentages = (double *)malloc(sizeof(double) * numTeams);
-  for (i = 0; i < numTeams; i++) {
+  for (i = 0; i < numTeam.s; i++) {
     teams[i] = (char *)malloc(sizeof(char) * maxSize);
   }
 
@@ -59,6 +59,10 @@ int main(int argc, char **argv) {
 
    //Get next line
     line = fgets(s, 100, read);
+  }
+  for(i = 0; i < numTeams; i++)
+  {
+    printf("%s\n", teams[i]);
   }
   fclose (read);
 
