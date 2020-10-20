@@ -39,7 +39,7 @@ int main(int argc, char **argv) {
   FILE* read = fopen (filePath, "r");
   char s[100];
   char *line = fgets(s, 100, read);
-  for (i = 0; i <= numTeams; i++)
+  for (i = 0; i < numTeams; i++)
   {
    //tokenize
     char *team = strtok(line, " ");
