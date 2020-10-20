@@ -92,7 +92,7 @@ void toXMLFile(char **states, int *populations, int numStates) {
 
  //Write to XML file
 
-  fprintf (write, "%s", populations[1]);
+  fprintf (write, "%s", states);
 
 }
 
