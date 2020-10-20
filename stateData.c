@@ -100,7 +100,7 @@ void toXMLFile(char **states, int *populations, int numStates) {
   }
   fprintf(write, "</STATES>\n");
   fclose (write);
-  flcose (read);
+  fclose (read);
 }
 
 void rtrim(char *str) {

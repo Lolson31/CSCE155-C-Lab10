@@ -53,16 +53,10 @@ int main(int argc, char **argv) {
 
    //populate arrays and check
     strcpy(teams[i], team);
-    printf("%s\n", teams[i]);
     winPercentages[i] = winRate;
-    printf("%lf\n", winPercentages[i]);
 
    //Get next line
     line = fgets(s, 100, read);
-  }
-  for(i = 0; i < numTeams; i++)
-  {
-    printf("%s\n", teams[i]);
   }
   fclose (read);
 
