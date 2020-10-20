@@ -37,6 +37,8 @@ int main(int argc, char **argv) {
   //      team name, wins, and losses, and store the results into
   //      teams[] and winPercentagesp[]
   FILE* read = fopen (filePath, "r");
+  char s[100];
+  line = fgets(s, 100, read);
   for (i = 0; i < numTeams * 3; i++)
   {
     char *team = strtok(line, " ");
