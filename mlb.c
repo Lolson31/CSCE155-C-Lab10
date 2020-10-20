@@ -39,7 +39,7 @@ int main(int argc, char **argv) {
   FILE* read = fopen (filePath, "r");
   char s[100];
   char *line = fgets(s, 100, read);
-  for (i = 0; i < numTeams * 3; i++)
+  for (i = 0; i < (numTeams - 1) * 3; i++)
   {
     char *team = strtok(line, " ");
     char *win = strtok(NULL, " ");
