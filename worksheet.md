@@ -35,6 +35,10 @@ c) Name one application where a binary file would be better
 
 4. What was the win percentage of the Chicago Cubs in 2011?
 
-
+    43.827%
 
 5. Who had the best season and who had the worst in 2011?
+
+    Best: Phillies
+
+    Worst: Astros
