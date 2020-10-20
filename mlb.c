@@ -42,11 +42,11 @@ int main(int argc, char **argv) {
   while (line != NULL)
   {
     char *team = strtok(line, " ");
-    char *win = strtok(NULL, " ");
-    char *loss = strtok(NULL, "\n");
+    int *win = strtok(NULL, " ");
+    int *loss = strtok(NULL, "\n");
     printf("%s\n", team);
-    printf("%s\n", win);
-    printf("%s\n", loss);
+    printf("%d\n", win);
+    printf("%d\n", loss);
     line = fgets(s, 100, read);
   }
   fclose (read);
