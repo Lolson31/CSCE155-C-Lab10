@@ -48,9 +48,9 @@ int main(int argc, char **argv) {
     char *loss = strtok(NULL, "\n");
 
    //convert win/loss characters to ints and calc winrate
-    int w = atoi(win);
-    int l = atoi(loss);
-    int winRate = w / (w + l);
+    double w = atoi(win);
+    double l = atoi(loss);
+    double winRate = w / (w + l);
 
    //populate arrays and check arrays
     teams[currTeam] = team;
