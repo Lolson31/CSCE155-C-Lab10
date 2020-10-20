@@ -29,7 +29,7 @@ int main(int argc, char **argv) {
   int i;
   char **teams = (char **)malloc(sizeof(char *) * numTeams);
   double *winPercentages = (double *)malloc(sizeof(double) * numTeams);
-  for (i = 0; i < numTeam.s; i++) {
+  for (i = 0; i < numTeams; i++) {
     teams[i] = (char *)malloc(sizeof(char) * maxSize);
   }
 
