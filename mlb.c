@@ -54,7 +54,7 @@ int main(int argc, char **argv) {
 
    //populate arrays and check arrays
     teams[currTeam] = team;
-    printf("%s\n", team[currTeam]);
+    printf("%s\n", teams[currTeam]);
     winPercentages[currTeam] = winRate;
     printf("%d\n", winPercentages[currTeam]);
    //Get next line
