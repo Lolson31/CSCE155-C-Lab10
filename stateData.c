@@ -84,15 +84,11 @@ void toXMLFile(char **states, int *populations, int numStates) {
   FILE* read  = fopen ("stateData.txt", "r");
 
  //Check for errors
-  if (read == NULL || write == NULL || states == NULL || populations == NULL || numStates <= 0)
-  {
-    printf("ERROR\n");
-    return (0);
-  }
+
 
  //Write to XML file
 
-  fprintf (write, "%s", states);
+  fprintf (write, "%s", states[1]);
 
 }
 
