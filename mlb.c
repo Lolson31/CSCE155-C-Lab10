@@ -39,8 +39,7 @@ int main(int argc, char **argv) {
   FILE* read = fopen (filePath, "r");
   char s[100];
   char *line = fgets(s, 100, read);
-  int currTeam = 1;
-  while (line != NULL)
+  for (i = 0; i <= numTeams; i++)
   {
    //tokenize
     char *team = strtok(line, " ");
@@ -53,13 +52,12 @@ int main(int argc, char **argv) {
     double winRate = w / (w + l);
 
    //populate arrays and check arrays
-    teams[currTeam] = team;
-    printf("%s\n", teams[currTeam]);
-    winPercentages[currTeam] = winRate;
-    printf("%lf\n", winPercentages[currTeam]);
+    teams[i] = team;
+    printf("%s\n", teams[i]);
+    winPercentages[i] = winRate;
+    printf("%lf\n", winPercentages[i]);
 
-   //Get next line and increment currTeam
-    currTeam++;
+   //Get next line
     line = fgets(s, 100, read);
   }
   fclose (read);
