@@ -42,8 +42,8 @@ int main(int argc, char **argv) {
   while (line != NULL)
   {
     char *team = strtok(line, " ");
-    int *win = strtok(NULL, " ");
-    int *loss = strtok(NULL, "\n");
+    int win = strtok(NULL, " ");
+    int loss = strtok(NULL, "\n");
     printf("%s\n", team);
     printf("%d\n", win);
     printf("%d\n", loss);
