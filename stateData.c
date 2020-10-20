@@ -93,7 +93,7 @@ void toXMLFile(char **states, int *populations, int numStates) {
     fprintf (write, "   <STATE>\n");
     fprintf (write, "     <NAME>%s</NAME>\n", states[i]);
     fprintf (write, "     <POPULATION>%d</POPULATION>\n", populations[i]);
-    fprintf (write, "   </STATE>\n", );
+    fprintf (write, "   </STATE>\n");
   }
   fprintf(write, "</STATES>\n");
 }
