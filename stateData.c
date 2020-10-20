@@ -79,12 +79,23 @@ int main(int argc, char **argv) {
 }
 
 void toXMLFile(char **states, int *populations, int numStates) {
-  // open file for writing and reading
+ // open file for writing and reading
   FILE* write = fopen ("stateData.xml", "w");
-  FILE* read = fopen ("stateData.txt", "r");
+  FILE* read  = fopen ("stateData.txt", "r");
 
-  // tokenize lines and write them
-  
+ //Check for errors
+  if (read == NULL || write == NULL || states == NULL || populations == NULL || numStates <= 0)
+  {
+    printf("ERROR\n");
+    return (0);
+  }
+
+ //Write to XML file
+  char str [100];
+  int n = 1000
+  char *s = fgets (str, n, read);
+  fprintf (write, s);
+
 }
 
 void rtrim(char *str) {
