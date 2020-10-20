@@ -51,8 +51,9 @@ int main(int argc, char **argv) {
     double l = atoi(loss);
     double winRate = w / (w + l);
 
-   //populate arrays and check arrays
-    teams[i] = team;
+   //populate arrays and check
+    strcpy(teams[i], team);
+    //teams[i] = team;
     printf("%s\n", teams[i]);
     winPercentages[i] = winRate;
     printf("%lf\n", winPercentages[i]);
