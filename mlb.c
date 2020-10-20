@@ -56,7 +56,7 @@ int main(int argc, char **argv) {
     teams[currTeam] = team;
     printf("%s\n", teams[currTeam]);
     winPercentages[currTeam] = winRate;
-    printf("%d\n", winPercentages[currTeam]);
+    printf("%lf\n", winPercentages[currTeam]);
    //Get next line
     line = fgets(s, 100, read);
   }
