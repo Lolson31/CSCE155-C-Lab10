@@ -84,7 +84,11 @@ void toXMLFile(char **states, int *populations, int numStates) {
   FILE* read  = fopen ("stateData.txt", "r");
 
  //Check for errors
-
+  if(states == NULL || populations == NULL || numStates <= 0)
+  {
+    printf("ERROR, bad val for args in toXMLFile\n");
+    return (0);
+  }
 
  //Write to XML file
   fprintf(write, "<STATES>\n");
