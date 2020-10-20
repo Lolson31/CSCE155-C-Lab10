@@ -47,7 +47,9 @@ int main(int argc, char **argv) {
     printf("%s\n", team);
     printf("%s\n", win);
     printf("%s\n", loss);
+    line = fgets(s, 100, read);
   }
+  fclose (read);
 
   // sort them
   sortMLB(teams, winPercentages, numTeams);
