@@ -87,9 +87,15 @@ void toXMLFile(char **states, int *populations, int numStates) {
 
 
  //Write to XML file
-
-  fprintf (write, "%s", states[1]);
-
+  fprintf(write, "<STATES>\n");
+  for (int i = 0; i < numStates; i++)
+  {
+    fprintf (write, "   <STATE>\n");
+    fprintf (write, "     <NAME>%s</NAME>\n", states[i]);
+    fprintf (write, "     <POPULATION>%d</POPULATION>\n", populations[i]);
+    fprintf (write, "   </STATE>\n", );
+  }
+  fprintf(write, "</STATES>\n");
 }
 
 void rtrim(char *str) {
