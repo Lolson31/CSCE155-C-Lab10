@@ -86,8 +86,13 @@ void toXMLFile(char **states, int *populations, int numStates) {
  //Check for errors
   if(states == NULL || populations == NULL || numStates <= 0)
   {
-    printf("ERROR, bad val for args in toXMLFile\n");
+    printf("ERROR: bad val for args in toXMLFile\n");
     return (0);
+  }
+
+  if (write == NULL || read == NULL)
+  {
+    printf("ERROR: Null val for files\n");
   }
 
  //Write to XML file
